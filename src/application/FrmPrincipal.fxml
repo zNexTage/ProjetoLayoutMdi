@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="apPrincipal" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FrmPrincipalController">
+   <children>
+      <SplitPane dividerPositions="0.2" layoutX="6.0" layoutY="70.0" prefHeight="800.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane fx:id="apMenuEsquerdo" maxHeight="798.0" maxWidth="197.0" minHeight="0.0" minWidth="197.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="49.0" layoutY="43.0" maxHeight="798.0" maxWidth="197.0" minHeight="798.0" minWidth="197.0" prefHeight="798.0" prefWidth="197.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="imgLogotipo" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../800px-IBM_logo.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnMdi1" mnemonicParsing="false" onAction="#btnMdi1_click" prefHeight="54.0" prefWidth="200.0" text="Button" />
+                        <Button fx:id="btnMdi2" mnemonicParsing="false" onAction="#btnMdi2_click" prefHeight="54.0" prefWidth="200.0" text="Button" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="apMenuDireito" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
